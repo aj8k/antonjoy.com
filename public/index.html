@@ -1,12 +1,229 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hello, World!</title>
-	</head>
-	<body>
-		<h1 id="heading">Hello, World!</h1>
-		<p>This page comes from a static asset stored at `public/index.html` as configured in `wrangler.jsonc`.</p>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Anton Joy</title>
+    <meta name="description" content="Software Engineer & Tech Lead." />
+    <meta name="author" content="Anton Joy" />
+
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://antonjoy.com/" />
+    <meta property="og:title" content="Anton Joy" />
+    <meta property="og:description" content="Software Engineer & Tech Lead." />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://antonjoy.com/" />
+    <meta property="twitter:title" content="Anton Joy" />
+    <meta
+      property="twitter:description"
+      content="Software Engineer & Tech Lead."
+    />
+
+    <style>
+      :root {
+        --bg: #0d0d0d;
+        --fg: #cccccc;
+        --highlight: #ffffff;
+        --accent: #ffd700;
+        --dim: #666666;
+        --font: "Courier New", Courier, monospace;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: var(--font);
+        line-height: 1.5;
+        margin: 0;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      main {
+        max-width: 680px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 1.1rem;
+        color: var(--dim);
+        margin-bottom: 40px;
+        font-weight: normal;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+      }
+
+      h1 span {
+        color: var(--accent);
+        font-weight: normal;
+      }
+
+      p {
+        margin-bottom: 24px;
+        font-size: 1rem;
+      }
+
+      .highlight {
+        color: var(--highlight);
+      }
+
+      .section-header {
+        color: var(--dim);
+        margin-top: 40px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+      }
+
+      .list-item {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1px;
+        text-decoration-color: var(--dim);
+        font-weight: normal;
+        transition:
+          color 0.2s,
+          text-decoration-color 0.2s;
+      }
+
+      a:hover {
+        color: var(--accent);
+        text-decoration-color: var(--accent);
+        text-decoration-style: dashed;
+        cursor: pointer;
+      }
+
+      .list-item span {
+        color: var(--dim);
+      }
+
+      .comment {
+        color: var(--dim);
+        font-style: italic;
+        margin-bottom: 24px;
+      }
+
+      .stack-line {
+        color: var(--highlight);
+        word-spacing: 15px;
+      }
+
+      .links {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #222;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .copyright {
+        margin-left: auto;
+        color: var(--dim);
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 20px;
+        }
+
+        .links {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+        }
+
+        .copyright {
+          margin-left: 0;
+          width: 100%;
+          margin-top: 30px;
+          padding-top: 10px;
+          border-top: 1px dashed #222;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>~/<span>about_Anton_Joy.txt</span></h1>
+
+      <p>
+        I am a <span class="highlight">Software Engineer & Tech Lead</span> with
+        <span id="exp-years">14</span>+ years of experience.
+      </p>
+
+      <div class="comment">// Focus: Architecture, Developer Experience</div>
+
+      <div class="section-header"># Work History</div>
+
+      <div class="list-item">
+        <a href="https://www.corva.ai" target="_blank">Corva</a>
+        <span>// Tech Lead & Tooling (High-load Dashboards)</span>
+      </div>
+      <div class="list-item">
+        <a href="https://ring.com" target="_blank">Ring</a>
+        <span>// Computer Vision Tooling</span>
+      </div>
+      <div class="list-item">
+        <a href="https://www.softserveinc.com" target="_blank">SoftServe</a>
+        <span>// E-commerce Platform</span>
+      </div>
+      <div class="list-item">
+        <a href="https://star.global" target="_blank">Cogniance</a>
+        <span>// Navigation & Fintech</span>
+      </div>
+      <div class="list-item">
+        <a href="https://wiki.openstreetmap.org/wiki/CloudMade" target="_blank"
+          >CloudMade</a
+        >
+        <span>// Automotive Interfaces</span>
+      </div>
+
+      <div class="section-header"># Tech Stack</div>
+      <div class="stack-line">TypeScript React Node.js Cloudflare Docker</div>
+
+      <p style="margin-top: 40px">
+        If you need an engineer who solves expensive problems instead of
+        creating new ones - let's talk.
+      </p>
+
+      <div class="links">
+        <a href="mailto:anton@antonjoy.com">anton@antonjoy.com</a>
+        <a href="https://github.com/aj8k" target="_blank">github</a>
+        <a href="https://linkedin.com/in/aj8k" target="_blank">linkedin</a>
+
+        <div class="copyright">~ / <span id="curr-year">2026</span> / aj8k</div>
+      </div>
+    </main>
+
+    <script>
+      (function () {
+        const startYear = 2012;
+        const currentYear = new Date().getFullYear();
+        const experience = currentYear - startYear;
+
+        document.getElementById("curr-year").textContent = currentYear;
+        document.getElementById("exp-years").textContent = experience;
+      })();
+    </script>
+  </body>
 </html>
