@@ -8,7 +8,7 @@
     <title>Anton Joy</title>
     <meta
       name="description"
-      content="Anton Joy — Software Engineer & Tech Lead. Frontend architecture, developer experience, TypeScript and React."
+      content="Anton Joy — Software Engineer focused on frontend architecture, developer experience, and practical tooling."
     />
     <meta name="author" content="Anton Joy" />
 
@@ -21,7 +21,7 @@
     <meta property="og:title" content="Anton Joy" />
     <meta
       property="og:description"
-      content="Anton Joy — Software Engineer & Tech Lead. Frontend architecture, developer experience, TypeScript and React."
+      content="Anton Joy — Software Engineer focused on frontend architecture, developer experience, and practical tooling."
     />
 
     <meta name="twitter:card" content="summary" />
@@ -29,7 +29,7 @@
     <meta name="twitter:title" content="Anton Joy" />
     <meta
       name="twitter:description"
-      content="Anton Joy — Software Engineer & Tech Lead. Frontend architecture, developer experience, TypeScript and React."
+      content="Anton Joy — Software Engineer focused on frontend architecture, developer experience, and practical tooling."
     />
 
     <style>
@@ -77,12 +77,13 @@
         color: var(--highlight);
       }
 
-      .section-header {
+      h2 {
         color: var(--dim);
         margin-top: 40px;
         margin-bottom: 10px;
         text-transform: uppercase;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
+        font-weight: normal;
         letter-spacing: 1px;
       }
 
@@ -178,7 +179,7 @@
           "https://www.producthunt.com/@antonjoy",
           "https://news.ycombinator.com/user?id=antonjoy"
         ],
-        "jobTitle": "Software Engineer / Tech Lead",
+        "jobTitle": "Software Engineer",
         "knowsAbout": [
           "Frontend Development",
           "Frontend Architecture",
@@ -195,25 +196,25 @@
       <h1>Anton Joy</h1>
 
       <p>
-        I am a <span class="highlight">Software Engineer & Tech Lead</span> with
-        <span id="exp-years">14</span>+ years of experience.
+        I am a <span class="highlight">Software Engineer</span> focused on
+        <span class="highlight">practical systems</span>, developer experience,
+        and frontend architecture. I build internal tools, UI platforms, and
+        workflows that reduce complexity.
       </p>
 
-      <div class="comment">// Focus: Architecture, Developer Experience</div>
-
-      <div class="section-header"># Work History</div>
+      <h2># Work History</h2>
 
       <div class="list-item">
         <a href="https://www.corva.ai" target="_blank" rel="noopener noreferrer"
           >Corva</a
         >
-        <span>// Tech Lead & Tooling (High-load Dashboards)</span>
+        <span>// tooling & dashboards</span>
       </div>
       <div class="list-item">
         <a href="https://ring.com" target="_blank" rel="noopener noreferrer"
           >Ring</a
         >
-        <span>// Computer Vision Tooling</span>
+        <span>// computer vision tooling</span>
       </div>
       <div class="list-item">
         <a
@@ -222,13 +223,13 @@
           rel="noopener noreferrer"
           >SoftServe</a
         >
-        <span>// E-commerce Platform</span>
+        <span>// e-commerce platform</span>
       </div>
       <div class="list-item">
         <a href="https://star.global" target="_blank" rel="noopener noreferrer"
           >Cogniance</a
         >
-        <span>// Navigation & Fintech</span>
+        <span>// navigation products & scrapers</span>
       </div>
       <div class="list-item">
         <a
@@ -237,49 +238,47 @@
           rel="noopener noreferrer"
           >CloudMade</a
         >
-        <span>// Automotive Interfaces</span>
+        <span>// automotive interfaces</span>
       </div>
 
-      <div class="section-header"># Tech Stack</div>
-      <div class="stack-line">TypeScript React Node.js Cloudflare Docker</div>
+      <h2># Tech Stack</h2>
+      <div class="stack-line">TypeScript React Node.js Docker</div>
 
       <p style="margin-top: 40px">
-        If you need an engineer who solves expensive problems instead of
-        creating new ones - let's talk.
+        I like shipping practical things and reducing complexity. Open to work
+        and collaboration.
       </p>
     </main>
 
     <footer class="links">
-      <a href="mailto:anton@antonjoy.com">anton@antonjoy.com</a>
+      <a href="#" id="email-link">anton@antonjoy.com</a>
       <a
         href="https://github.com/aj8k"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="me noopener noreferrer"
         >github</a
       >
       <a
         href="https://linkedin.com/in/antonjoy/"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="me noopener noreferrer"
         >linkedin</a
       >
       <a
         href="https://bsky.app/profile/antonjoy.com"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="me noopener noreferrer"
         >bluesky</a
       >
 
-      <div class="copyright"><span id="curr-year">2026</span> / Anton Joy</div>
+      <div class="copyright">2026 / Anton Joy</div>
     </footer>
     <script>
       (function () {
-        const startYear = 2012;
-        const currentYear = new Date().getFullYear();
-        const experience = currentYear - startYear;
-
-        document.getElementById("curr-year").textContent = currentYear;
-        document.getElementById("exp-years").textContent = experience;
+        const email = "anton@antonjoy.com";
+        const emailLink = document.getElementById("email-link");
+        emailLink.setAttribute("href", "mailto:" + email);
+        emailLink.textContent = email;
       })();
     </script>
   </body>
